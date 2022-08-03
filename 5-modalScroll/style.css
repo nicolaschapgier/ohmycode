@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body{
+    font-size: 1.4rem; /*= 14px*/
+    font-family: Arial;
+    color : white;
+}
+
+.container{
+    background-color: #1E2337;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2{
+    background-color: orange;
+}
+
+.part3{
+    background-color: orangered;
+}
+.modal-container{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(136,222,136,0.8);
+    justify-content: center;
+    align-items: center;
+}
+.more-details{
+    background-color: #ffffff;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    padding: 3rem;
+    color: #1E2337;
+}
+.more-details i{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: grey;
+}
+.modal-titre{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.code{
+    display: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: monospace;
+    padding: 1rem;
+}
+.btn-success{
+    height: 4rem;
+    background-color: rgb(231,171, 61);
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+}

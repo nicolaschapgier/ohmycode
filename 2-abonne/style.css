@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body{
+    font-size: 1.4rem; /*= 14px*/
+    font-family: Arial;
+    color : white;
+}
+
+.container{
+    background-color: #1E2337;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    padding: 1rem;
+    background-color: #b5b5b5;
+    border: none;
+    color: #1E2337;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.happy{
+    color: #f1bf2a;
+    transition: 1s;
+}
+
+.abonne{
+    background-color: #f1bf2a;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+i{
+    transition: 1s;
+}

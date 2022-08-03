@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    margin:0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body{
+    font-size: 1.4rem; /*= 14px*/
+    font-family: 'Quicksand', sans-serif;
+    color : white;
+}
+
+.container{
+    background-color: #1E2337;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-desktop{
+    height: 8rem;
+    line-height : 8rem;
+    text-align: center;
+}
+.navbar-desktop a{
+    padding : 3rem;
+}
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-mobile i{
+    position : fixed;
+    z-index: 2;
+    top : 9px;
+    right : 15px;
+    font-size: 3rem;
+    color : white;
+}
+
+.navbar-mobile .modal{
+    background-color: #F92995;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: -100;
+    left : 0;
+    opacity: 0.9;
+}
+
+.modal{
+    transition : top 0.9s;
+    background-color: #F92995;
+    height : 100vh;
+    position: fixed;
+    width : 100%;
+    top : -100vh;
+    left : 0;
+    opacity: 0.9%;
+}
+
+.change-modal{
+    top : 0;
+}
+
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 5rem;
+    font-weight:800;
+    color: #1E2337;
+    padding: 2rem;
+}
+
+@media screen and (max-width : 700px){
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+    }
+}

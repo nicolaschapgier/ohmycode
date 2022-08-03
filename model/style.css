@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body{
+    font-size: 1.4rem; /*= 14px*/
+    font-family: Arial;
+    color : white;
+}
+
+.container{
+    background-color: #1E2337;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
